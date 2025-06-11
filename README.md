@@ -125,9 +125,6 @@ class LandingPageController {
   }
 }
 ```
-
-## 🎨 Design System
-
 ---
 
 ## 📈 Analysis Results
