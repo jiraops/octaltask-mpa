@@ -1,4 +1,4 @@
-# 🚀 OctalTask - Modern Landing Page (MPA)
+# 🚀 OctalTask - Multi-page Application (MPA)
 
 <div align="center">
   <img src="logo.png" alt="OctalTask Logo" width="150" height="120">
@@ -6,6 +6,9 @@
   **Modern Task Management Landing Page**
 
   *Built with pure HTML, CSS, and JavaScript - No frameworks required*
+
+  [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-success?style=for-the-badge)](https://octaltask-mpa.vercel.app/)
+  [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://your-octaltask-site.vercel.app)
 
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
   [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -15,7 +18,7 @@
 
 ## 📖 About
 
-OctalTask is a modern landing page for a task management application, built entirely with **vanilla HTML, CSS, and JavaScript**. It is a university project at the **University of Information Technology – VNU-HCM**, showcasing the ability to create a professional web interface without relying on complex frameworks.
+This is a research project that compares the performance between **Single-Page Application (SPA)** and **Multi-Page Application (MPA)** by building a landing page for the task management application "OctalTask."
 
 ## ⚡ Tech Stack
 
@@ -52,7 +55,10 @@ OctalTask is a modern landing page for a task management application, built enti
 
 ## 🚀 Quick Start
 
-### Using Direct Browser
+### 🌐 **Option 1: View Live Demo**
+Visit the deployed website: **[https://your-octaltask-site.vercel.app](https://your-octaltask-site.vercel.app)**
+
+### 💻 **Option 2: Run Locally**
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -60,6 +66,15 @@ cd octaltask-mpa
 
 # Open in browser
 open index.html
+```
+
+Or serve with a local server:
+```bash
+# Using Python
+python -m http.server 8000
+
+# Using Node.js
+npx serve .
 ```
 
 Then visit `http://localhost:8000`
@@ -113,22 +128,62 @@ class LandingPageController {
 
 ## 🎨 Design System
 
-### Color Palette
-- **Primary**: Blue (#3b82f6) to Purple (#8b5cf6) gradients
-- **Secondary**: Gray scale (#6b7280)
-- **Accent**: Green (#10b981) for success states
-- **Backgrounds**: Light (#f9fafb) / Dark (#111827)
+---
 
-### Typography
-- **Font Family**: Inter (system fallback)
-- **Scale**: Tailwind's default scale (xs to 6xl)
-- **Weight**: 400 (normal) to 700 (bold)
+## 📈 Analysis Results
 
-### Components
-- **Buttons**: Primary, secondary, outline variants
-- **Cards**: Feature, testimonial, team member cards
-- **Navigation**: Fixed header with mobile toggle
-- **Sections**: Hero, features, how-it-works, about, testimonials, FAQ
+### 🏆 Key Findings
+
+#### **MPA Advantages:**
+- ✅ **Faster Initial Load** - Immediate content visibility
+- ✅ **Better SEO** - Search engine friendly out-of-the-box
+- ✅ **Simpler Architecture** - Easier to understand and maintain
+- ✅ **Smaller Bundle** - Less JavaScript to download and parse
+- ✅ **Better Core Web Vitals** - Superior performance metrics
+
+#### **SPA Advantages:**
+- ✅ **Rich Interactivity** - Complex state management
+- ✅ **Developer Experience** - Modern tooling and debugging
+- ✅ **Component Reusability** - Modular architecture
+- ✅ **Instant Navigation** - No page reloads
+- ✅ **Advanced Features** - Virtual DOM, lifecycle methods
+
+### 🎯 Recommendations
+
+| Use Case | Recommended Approach | Reason |
+|----------|---------------------|---------|
+| **Landing Pages** | MPA | Better SEO, faster load times |
+| **Marketing Sites** | MPA | Content-focused, SEO critical |
+| **Web Applications** | SPA | Rich interactivity needed |
+| **E-commerce** | Hybrid | Product pages (MPA) + Cart (SPA) |
+| **Blogs/News** | MPA | Content delivery focused |
+
+---
+
+
+## 🧪 Testing Methodology
+
+### Performance Testing Tools
+- **Lighthouse** - Web performance auditing
+- **WebPageTest** - Real-world performance testing
+- **Chrome DevTools** - Network and performance profiling
+- **GTmetrix** - Detailed performance analysis
+
+### Testing Scenarios
+1. **Cold Load** - First-time visitor experience
+2. **Warm Load** - Returning visitor with cache
+3. **Slow 3G** - Mobile network simulation
+4. **Fast 3G** - Improved mobile connection
+5. **Desktop** - High-speed broadband
+
+### Metrics Measured
+- First Contentful Paint (FCP)
+- Largest Contentful Paint (LCP)
+- First Input Delay (FID)
+- Cumulative Layout Shift (CLS)
+- Total Blocking Time (TBT)
+
+---
 
 ## 📱 Browser Support
 
@@ -141,25 +196,6 @@ class LandingPageController {
 | Mobile Safari | 14+ |
 | Mobile Chrome | 90+ |
 
-## 🎯 Key Highlights
-
-### 🏆 **Performance Benefits**
-- ⚡ **Fast Loading** - No framework overhead
-- 📦 **Small Bundle** - ~45KB total size
-- 🚀 **Quick TTI** - Time to Interactive < 0.5s
-- 💨 **Instant Navigation** - No build process needed
-
-### 🛠️ **Developer Experience**
-- 🔧 **Simple Setup** - No complex build tools
-- 📝 **Clean Code** - Well-organized and commented
-- 🎨 **Modern CSS** - Flexbox, Grid, Custom Properties
-- 📱 **Mobile First** - Responsive design patterns
-
-### 🌐 **SEO Friendly**
-- 📄 **Semantic HTML** - Proper heading structure
-- 🔍 **Meta Tags** - Optimized for search engines
-- 🚀 **Fast Loading** - Better Core Web Vitals
-- 📱 **Mobile Friendly** - Responsive and accessible
 
 ## 👥 Team Members
 
@@ -183,12 +219,6 @@ class LandingPageController {
 - ✅ **Responsive Design** - Mobile-first breakpoints
 - ✅ **Performance Optimized** - Efficient animations and interactions
 
-### Testing
-- **Cross-browser** compatibility testing
-- **Mobile device** responsiveness testing
-- **Accessibility** compliance checking
-- **Performance** metrics monitoring
-
 ## 📄 License
 
 This project is created for educational purposes as part of a university course assignment.
@@ -204,10 +234,10 @@ This project is created for educational purposes as part of a university course 
 
 <div align="center">
 
-  **🎓 University of Information Technology - VNUHCM**
+  **⭐ Star this project if it helped your research!**
 
-  **Web Development Course Project - 2025**
+  **Made with ❤️ by UIT-VNUHCM Students**
 
-  **Made with ❤️ by UIT Students**
+  **📊 [View Live Demo](https://octaltask-mpa.vercel.app/) | 📊 [SPA Version](https://octaltask.vercel.app/)**
 
 </div>
