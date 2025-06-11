@@ -56,7 +56,7 @@ This is a research project that compares the performance between **Single-Page A
 ## 🚀 Quick Start
 
 ### 🌐 **Option 1: View Live Demo**
-Visit the deployed website: **[https://your-octaltask-site.vercel.app](https://your-octaltask-site.vercel.app)**
+Visit the deployed website: **[https://octaltask-mpa.vercel.app/](https://octaltask-mpa.vercel.app/)**
 
 ### 💻 **Option 2: Run Locally**
 ```bash
