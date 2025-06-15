@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - OctalTask</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-white flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 bg-white border-b border-gray-200 z-10">
+            <div class="px-4 py-2.5 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div id="logo" class="text-2xl font-normal">
+                        <span class="font-medium text-blue-600">Octal</span><span class="font-normal text-gray-800">Task</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col items-center justify-center px-6 py-20 min-h-screen">
+            <div class="text-center space-y-6">
+                <!-- 404 Graphic -->
+                <div class="inline-flex items-center text-6xl font-bold tracking-tight text-blue-600">
+                    <span>4</span>
+                    <div class="mx-2 relative">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center shadow-md">
+                            <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>4</span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-2xl md:text-3xl font-medium text-gray-800">
+                    Oops! That page isn't here.
+                </h1>
+
+                <!-- Description -->
+                <p class="text-gray-500 max-w-md mx-auto text-base">
+                    We looked everywhere but couldn't find what you're looking for. Maybe try heading back home?
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                    <button id="goBackBtn" class="px-4 py-2 border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center gap-2">
+                        Go Back
+                    </button>
+
+                    <a href="../index.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center gap-2">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 12 2-2m0 0 7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        Home Page
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-50 border-t border-gray-200 p-8 text-center">
+            <div class="text-gray-600 text-sm">
+                <p>&copy; 2024 OctalTask. All rights reserved.</p>
+                <p class="mt-2">Made with ❤️ for productivity enthusiasts</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Go back button functionality
+        const goBackBtn = document.getElementById('goBackBtn');
+
+        goBackBtn.addEventListener('click', function() {
+            // Check if there's a previous page in history
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // If no history, redirect to home page
+                window.location.href = '../index.html';
+            }
+        });
+
+        // Optional: Add some animation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('main > div > *');
+
+            elements.forEach((element, index) => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
