@@ -1,7 +1,7 @@
 # 🚀 OctalTask - Multi-page Application (MPA)
 
 <div align="center">
-  <img src="logo.png" alt="OctalTask Logo" width="150" height="120">
+  <img src="./public/logo.png" alt="OctalTask Logo" width="150" height="120">
 
   **Modern Task Management Landing Page**
 
