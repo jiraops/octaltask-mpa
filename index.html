@@ -10,7 +10,8 @@
   <script src="./js/tailwind-config.js"></script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./public/logo.png">
+  <!-- The path below will make error in loading the logo on development environment but not the production environment -->
+  <link rel="icon" type="image/png" href="/octaltask-mpa/public/logo.png">
 
 </head>
 
@@ -23,7 +24,8 @@
         <!-- Logo -->
         <div class="flex items-center space-x-2">
           <div class="w-8 h-8 rounded-lg flex items-center justify-center">
-            <img src="./public/logo.png" />
+            <!-- The path below will make error in loading the logo on development environment but not the production environment -->
+            <img src="/octaltask-mpa/public/logo.png" />
           </div>
           <span class="text-xl text-blue-600 font-bold dark:text-white">OctalTask</span>
         </div>
@@ -737,7 +739,8 @@
         <div class="md:col-span-2">
           <div class="flex items-center space-x-2 mb-4">
             <div class="w-8 h-8 rounded-lg flex items-center justify-center">
-              <img src="./public/logo.png" />
+              <!-- The path below will make error in loading the logo on development environment but not the production environment -->
+              <img src="/octaltask-mpa/public/logo.png" />
             </div>
             <span class="text-xl font-bold">OctalTask</span>
           </div>
