@@ -7,8 +7,8 @@
 
   *Built with pure HTML, CSS, and JavaScript - No frameworks required*
 
-  [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-success?style=for-the-badge)](https://octaltask-mpa.vercel.app/)
-  [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://your-octaltask-site.vercel.app)
+  [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-success?style=for-the-badge)](https://jiraops.github.io/octaltask-mpa/)
+  [![GitHub Pages](https://img.shields.io/badge/Deployed_on-GitHub_Pages-121013?style=for-the-badge&logo=github)](https://jiraops.github.io/octaltask-mpa/)
 
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
   [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -56,7 +56,7 @@ This is a research project that compares the performance between **Single-Page A
 ## 🚀 Quick Start
 
 ### 🌐 **Option 1: View Live Demo**
-Visit the deployed website: **[https://octaltask-mpa.vercel.app/](https://octaltask-mpa.vercel.app/)**
+Visit the deployed website: **[https://jiraops.github.io/octaltask-mpa/](https://jiraops.github.io/octaltask-mpa/)**
 
 ### 💻 **Option 2: Run Locally**
 ```bash
@@ -235,6 +235,6 @@ This project is created for educational purposes as part of a university course 
 
   **Made with ❤️ by UIT-VNUHCM Students**
 
-  **📊 [View Live Demo](https://octaltask-mpa.vercel.app/) | 📊 [SPA Version](https://octaltask.vercel.app/)**
+  **📊 [View Live Demo](https://jiraops.github.io/octaltask-mpa/) | 📊 [SPA Version](https://jiraops.github.io/octaltask/)**
 
 </div>
